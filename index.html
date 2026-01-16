@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jordan's Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/">Jordan F.</a>
+      <nav>
+        <a href="https://github.com/jordanfulawka" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/jordan-fulawka-561619230/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="intro-header">
+          <h1>Hi! I'm Jordan...</h1>
+          <p>Software Developer</p>
+        </div>
+        <h5 class="intro-description">
+          A civil engineer by qualification, and a software engineer by trade.
+          Based in Toronto, I love o walk, play video games, and build out all
+          sorts of fun and useful internet applications.
+        </h5>
+        <div class="links-container">
+          <i class="fa-solid link-arrow fa-arrow-right"></i>
+          <a href="mailto:jfulawka@uoguelph.ca">Email me</a>
+          <a href="https://github.com/jordanfulawka" target="_blank">GitHub </a>
+          <a
+            href="https://www.linkedin.com/in/jordan-fulawka-561619230/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+        <div id="play-game">
+          <button onclick="playGame()">Play game???</button>
+        </div>
+        <div class="color-div" style="display: none">
+          <h4>Pick a colour</h4>
+          <p style="display: none">Great... now it's ruined!</p>
+          <input
+            type="color"
+            id="color-picker"
+            onchange="changeColor()"
+            value="#0084ff"
+          />
+          <button style="display: none" onclick="resetColor()">Reset</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technologies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JavaScript</td>
+              <td>ReactJS | React Native | NextJS | NodeJS & ExpressJS</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Numpy | Pandas | Seaborn | Flask</td>
+            </tr>
+            <tr>
+              <td>Web</td>
+              <td>
+                Tailwind CSS | Styled Components | Firebase | Postgres | Git |
+                Docker
+              </td>
+            </tr>
+            <tr>
+              <td>Design</td>
+              <td>Do later</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Latest Projects</h2>
+        <div class="cards-grid">
+          <div class="project-card">
+            <div class="">
+              <p>January 3, 2026</p>
+              <h4>The Brogram</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>React</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>CSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+              </div>
+              <p>
+                A simple ReactJS application that tracks your weightlifting
+                progress and provides workouts that are simple, quick, and show
+                results FAST 🔥
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://calm-kringle-68dafb.netlify.app/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/jordanfulawka/the_brogram"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="/public/brogram_thumbnail.png"
+                alt="project thumbnail"
+              />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="">
+              <p>January 12, 2026</p>
+              <h4>The J-Store</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Stripe</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Tailwind</p>
+                </div>
+              </div>
+              <p>Description here</p>
+              <div class="project-links">
+                <a
+                  href="https://main.dg02obzt4lv7h.amplifyapp.com/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/jordanfulawka/j-store"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="/public/portfoloio_tumbnail.png"
+                alt="project thumbnail"
+              />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="">
+              <p>Date here</p>
+              <h4>Expense Tracker</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+              </div>
+              <p>Description here</p>
+              <div class="project-links">
+                <a
+                  href="https://expense-tracker-jf.netlify.app/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/jordanfulawka/expense-tracker"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="public\expense-tracker_thumbnail.png"
+                alt="project thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        By <a href="" target="_blank">Jordan Fulawka</a> ⭐ the repo on
+        <a href="" target="_blank">GitHub</a>
+      </p>
+    </footer>
+    <script>
+      const body = document.querySelector('body');
+      const colorInput = document.getElementById('color-picker');
+      const colorDiv = document.querySelector('.color-div');
+      const hiddenText = document.querySelector('.color-div p');
+      const resetBtn = document.querySelector('.color-div button');
+      const playBtn = document.getElementById('play-game');
+
+      function playGame() {
+        colorDiv.style.display = 'block';
+        playBtn.style.display = 'none';
+      }
+
+      function changeColor() {
+        const selectedColor = colorInput.value;
+        body.style.background = selectedColor;
+        resetBtn.style.display = 'block';
+        hiddenText.style.display = 'block';
+        colorInput.style.display = 'none';
+      }
+
+      function resetColor() {
+        body.style.background = 'white';
+        colorInput.style.display = 'block';
+        playBtn.style.display = 'block';
+        hiddenText.style.display = 'none';
+        resetBtn.style.display = 'none';
+        colorDiv.style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
+~
